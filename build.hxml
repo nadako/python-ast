@@ -1,0 +1,19 @@
+# completion
+-cp src
+-main Main
+-neko main.n
+--no-output
+
+# generate adts
+--next
+-cmd python asdl/main.py
+
+# compile
+--next
+-cp src
+-main Main
+-neko main.n
+
+# run
+--next
+-cmd neko main.n
