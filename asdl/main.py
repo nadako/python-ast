@@ -68,6 +68,8 @@ if not asdl.check(mod):
 file = open(dir + "/../src/Python.hx", "w")
 file.write("// THIS FILE IS GENERATED FROM Python.asdl\n\n")
 file.write("typedef Identifier = String;\n\n")
+file.write("typedef Bytes = String;\n\n")
+file.write("typedef Singleton = String;\n\n")
 file.write("typedef Object = String; // used for Num O_o\n\n")
 HaxeVisitor(file).visit(mod)
 file.close()

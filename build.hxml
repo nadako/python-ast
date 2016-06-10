@@ -1,19 +1,14 @@
-# completion
--cp src
--main Main
--neko main.n
---no-output
-
 # generate adts
+-cmd C:\Python35\python.exe asdl/main.py
+
 --next
--cmd python asdl/main.py
 
 # compile
---next
 -cp src
 -main Main
 -neko main.n
 
-# run
 --next
+
+# run
 -cmd neko main.n
